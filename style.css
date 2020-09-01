@@ -267,8 +267,6 @@ body{
 /* Education detailsm-------------------------------- */
 
 
-
-
 .education .title,
 .work-exp .title,
 .project .title,
@@ -321,6 +319,9 @@ body{
 .inner-right .technical-skill .list-wraps .info-clg{
     margin-top: 15px;
     margin-left: 20px;
+}
+.inner-right .technical-skill .list-wraps{
+    margin-top: 25px;
 }
 
 .inner-right .list-wrap .info-title,
