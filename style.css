@@ -8,14 +8,13 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-
-
 body{
     /* background: linear-gradient(to right ,#8772ff ,#cbc2ff); */
     position: relative;
 }
 .resume{
     width: 800px;
+    /* height: 1400px; */
     margin: 10px auto;
     display: flex;
     border: 2px solid black;
@@ -28,12 +27,12 @@ body{
 }
 .list-wrap a{
     width: calc(100% - 40px);
-    color: #000;
+    color: #ffffff;
     margin-left: 8px;
     word-break: break-word;
 }
 .list-wrap a:hover{
-    color: rgb(165, 161, 161);;
+    color: rgb(206, 203, 203);
 }
 .resume-left .profile{
     width: 200px;
@@ -116,11 +115,21 @@ body{
     background: #ffffff;
     position: absolute;
 }
+.skill .list-wrap{
+    margin-bottom: 20px;
+    display: flex;
+    /* align-items: center; */
+}
 .contact .list-wrap{
     display: flex;
     align-items: center;
     margin-bottom: 5px;
 }
+.skill .list-wrap .info,
+.contact .list-wrap .info{
+    color: #ffffff;
+}
+
 .pb{
     padding-bottom: 40px;
 }
@@ -136,28 +145,37 @@ body{
     justify-content: center;
     border-radius: 50%;
 }
+.skill .list-wrap .info,
 .contact .list-wrap .info{
     width: calc(100% - 40px);
     word-break: break-word;
     padding-left: 5px;
 }
 
-.skill ul,
+.skill .list-wrap .icon{
+    font-size: 20px;
+    color: rgb(35, 35, 116);
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    border-radius: 50%;
+}
+
 .hobbies ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.skill .list-wrap .icon,
 .hobbies .list-wrap .icon{
     font-size: 30px;
 }
-.skill .list-wrap .info,
 .hobbies .list-wrap .info{
     font-size: 16px;
     font-weight: 500;
 }
-.skill .list-wrap,
 .hobbies .list-wrap{
     width: 70px;
     height: 70px;
@@ -170,7 +188,7 @@ body{
     justify-content: center;
 
 }
-
+ 
 
 
 
@@ -185,7 +203,7 @@ body{
     font-size: 40px;
     font-weight: 500;
     letter-spacing: 5px;
-    color: #9153c9;
+    color: rgb(190, 186, 186);
     text-transform: uppercase;
 }
 .resume-right .name-role .role{
@@ -193,7 +211,7 @@ body{
     font-weight: 500;
     letter-spacing: 5px;
     margin-top: 0px;
-    color: #9153c9;
+    color: rgb(175, 174, 174);
     
 }
 .resume-right .header .about{
@@ -204,7 +222,41 @@ body{
     text-align: justify;
     line-height: 20px;
     letter-spacing: 2px;
-    color: #9153c9;
+    color: rgb(165, 161, 161);
+}
+.resume-right .header .about-obj{
+    font-size: 22px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #000000;
+}
+.resume-right .header .about-obj p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+.resume-right .header .about-obj h5{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(165, 161, 161);
+    text-align: right;
+    position: relative;
+    margin-bottom: 15px;
+}
+.resume-right .header .about-obj h5::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background: #9153c9;
+    margin: 0 auto;
+    right: 0;
+    top: 25px;
 }
 
 .resume-right .inner-right{
@@ -213,9 +265,14 @@ body{
 }
 
 /* Education detailsm-------------------------------- */
+
+
+
+
 .education .title,
 .work-exp .title,
-.project .title{
+.project .title,
+.technical-skill .title{
     font-size: 24px;
     font-weight: 500;
     color: rgb(165, 161, 161);
@@ -225,7 +282,8 @@ body{
 }
 .education .title::before,
 .work-exp .title::before,
-.project .title::before{
+.project .title::before,
+.technical-skill .title::before{
     content: '';
     position: absolute;
     width: 80px;
@@ -251,6 +309,20 @@ body{
     position: relative;
 }
 
+
+ .inner-right .technical-skill .list-wraps .info-title{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #9153c9;
+}
+
+.inner-right .technical-skill .list-wraps .info-clg{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
 .inner-right .list-wrap .info-title,
 .inner-right .list-wraps .info-title{
     text-transform: uppercase;
@@ -269,9 +341,7 @@ body{
     font-weight: 400;
     margin-top: 3px;
 }
-.inner-right .list-wrap .info-clg{
-    margin-top: 2px;
-}
+
 .inner-right .list-wraps .info-clg{
     margin-top: 37px;
     margin-left: 15px;
@@ -315,4 +385,5 @@ body{
     left: 50%;
     transform: translate(-50%);
 }
+
 
